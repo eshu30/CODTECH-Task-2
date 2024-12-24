@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+    <title>Eshraj's Weather App</title>
+</head>
+<style>
+  body{
+    /* background: black; */
+    background-image: url("WeatherBg.jpg ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+   
+  }
+  .image{
+      margin-left: 98px;
+  }
+
+@media only screen and (max-width: 600px) {
+body {
+  /* background-image: url("/WeatherBg.jpg"); */
+  background-color: azure;
+}
+}
+</style>
+<body>
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <h3 class="mb-4 pb-2 fw-normal" style="color: white;">Check the weather forecast</h3>
+
+            <div class="input-group rounded mb-3">
+              <input
+                type="search"
+                id="input"
+                class="form-control rounded"
+                placeholder="City"
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+              <button class="btn btn-dark Select-Button">Enter</button>
+            </div>
+
+            
+
+            <div class="card shadow-0 border">
+              <div class="card-body p-4">
+                <h4 class="mb-1 sfw-normal"><strong  id="state">New York</strong> <strong>,</strong><strong id="country">Us</strong></h4>
+                <p class="mb-2 ">Current temperature: <strong class="para-temperature">0</strong><strong>°C</strong></p>
+                <p>Feels like: <strong class="para-feels">0</strong><strong>°C</strong><br>Weather Humidity: <strong class="para-humidity">0</strong><br>Wind Speed: <strong class="para-windSpeed">0</strong></p>
+                <p></p>
+               
+
+                <!-- <div class="d-flex flex-row align-items-center">
+                  <p class="mb-0 me-4">Scattered Clouds</p><br>
+                </div> -->
+                <div class="image"><img src="weather.webp" alt=""></div>
+                <h6>Climate : <span class="climate-name"></span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
+<script src="weather.js"></script>
